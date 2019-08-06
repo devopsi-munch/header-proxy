@@ -11,9 +11,9 @@ const proxy = httpProxy.createProxyServer();
 app.use(morgan('dev'));
 app.use('/:id', express.static(path.join(__dirname, '/../client')));
 
-const gallery = 'http://localhost:3000';
-const reservation = 'http://localhost:3001';
-const popular = 'http://localhost:3002';
+//const gallery = 'http://localhost:3000';
+//const reservation = 'http://localhost:3001';
+//const popular = 'http://localhost:3002';
 const header = 'http://13.57.243.108:3003';
 
 app.all('/gallery/:id', function(req, res) {
